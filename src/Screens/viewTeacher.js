@@ -61,7 +61,7 @@ const ViewTeacher = ({ route, navigation }) => {
     console.log('Notas guardadas:', newGrade);
     Alert.alert('Éxito', `Notas guardadas para ${studentName}`, [{ text: 'OK' }]);
 
-    // Limpiar los campos
+   
     setStudentName('');
     setGrade1('');
     setGrade2('');
@@ -79,7 +79,7 @@ const ViewTeacher = ({ route, navigation }) => {
             source={{ uri: 'https://cdn-icons-png.flaticon.com/512/6454/6454364.png' }}
             style={styles.avatar}
           />
-          <Text style={styles.profileName}>{`${profile.name} ${profile.lastName}`}</Text>
+          <Text style={styles.profileName}>`${profile.name} ${profile.lastName}´</Text>
           <Text style={styles.profession}>Profesor</Text>
         </View>
 
