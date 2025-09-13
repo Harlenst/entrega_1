@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, View, Image, ScrollView, Alert } from 'react-native';
-import { Card, Avatar, Text, Button, Divider, Chip } from 'react-native-paper';
+import { Card, Avatar, Text, Button, Divider, Chip,FAB } from 'react-native-paper';
 import styles from '../Styles/styles';
 
 const ViewStudent = ({ route, navigation }) => {
@@ -55,13 +55,11 @@ const ViewStudent = ({ route, navigation }) => {
                     </Card.Content>
                 </Card>
                 <View style={styles.buttonContainer}>
-                    <Button
-                        mode='contained'
+                    <FAB
+                        style={styles.fab}
+                        icon="arrow-left-bold"
                         onPress={handleBack}
-                        style={styles.button}
-                        theme={{ colors: { primary: '#6200EE' } }}
-                        label="Volver"
-                        icon="arrow-left"
+                        color="white"
                     />
                 </View>
             </ScrollView>

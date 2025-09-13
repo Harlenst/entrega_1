@@ -3,10 +3,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { PaperProvider } from 'react-native-paper';
 import HomeSelect from './src/Screens/HomeSelect';
-import CreateStudent from './src/Screens/createStudent';
-import CreateTeacher from './src/Screens/createTeacher';
-import ViewStudent from './src/Screens/viewStudent';
-import VistaTeacher from './src/Screens/viewTeacher';
+import CreateStudent from './src/Screens/CreateStudent';
+import CreateTeacher from './src/Screens/CreateTeacher';
+import ViewStudent from './src/Screens/ViewStudent';
+import ViewTeacher from "./src/Screens/ViewTeacher";
+
 
 const Stack = createNativeStackNavigator();
 
@@ -36,8 +37,8 @@ export default function App() {
             options={{ title: 'Ver Estudiante' }}
           />
           <Stack.Screen
-            name="VistaTeacher"
-            component={VistaTeacher}
+            name="ViewTeacher"
+            component={ViewTeacher}
             options={{ title: 'Ver Profesor' }}
           />
         </Stack.Navigator>

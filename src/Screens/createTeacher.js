@@ -27,8 +27,8 @@ const CreateProfile = ({ navigation }) => {
             Alert.alert('Error', 'Los campos con * son obligatorios', [{ text: 'OK' }]);
             return;
         }
-        const professorProfile = { name, lastName, email, phone, subject };
-        navigation.navigate('ViewProfessor', { profile: professorProfile });
+        const teacherProfile = { name, lastName, email, phone, subject };
+        navigation.navigate('ViewTeacher', { profile: teacherProfile });
     }
 
     return (
@@ -36,7 +36,7 @@ const CreateProfile = ({ navigation }) => {
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <View style={styles.headerContainer}>
                     <Image
-                        source={{ uri: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png' }}
+                        source={{ uri: 'https://img.freepik.com/vector-gratis/circulo-azul-usuario-blanco_78370-4707.jpg?semt=ais_hybrid&w=740&q=80' }}
                         style={styles.profileImage}
                     />
                     <Text style={styles.title}>Crear Profesor</Text>
@@ -51,7 +51,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="account" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Apellido'}
@@ -60,7 +60,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="account-outline" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Email'}
@@ -69,7 +69,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="email" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Teléfono'}
@@ -78,7 +78,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="phone" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Asignatura'}
@@ -87,14 +87,14 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="book" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <Button
                             mode='contained'
                             onPress={handleSave}
                             style={styles.button}
                             disabled={!formValid}
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         >
                             Guardar Profesor
                         </Button>

@@ -35,7 +35,7 @@ const CreateProfile = ({ navigation }) => {
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <View style={styles.headerContainer}>
                     <Image
-                        source={{ uri: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png' }}
+                        source={{ uri: 'https://img.freepik.com/vector-gratis/circulo-azul-usuario-blanco_78370-4707.jpg?semt=ais_hybrid&w=740&q=80' }}
                         style={styles.profileImage}
                     />
                     <Text style={styles.title}>Crear Estudiante</Text>
@@ -50,7 +50,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="account" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Apellido'}
@@ -59,7 +59,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="account-outline" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Email'}
@@ -68,7 +68,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="email" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'* Teléfono'}
@@ -77,7 +77,7 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="phone" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <TextInput
                             label={'ID Estudiante (Opcional)'}
@@ -86,14 +86,14 @@ const CreateProfile = ({ navigation }) => {
                             style={styles.input}
                             left={<TextInput.Icon name="card-account-details" />}
                             mode='outlined'
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         />
                         <Button
                             mode='contained'
                             onPress={handleSave}
                             style={styles.button}
                             disabled={!formValid}
-                            theme={{ colors: { primary: '#6200EE' } }}
+                            
                         >
                             Guardar Estudiante
                         </Button>
