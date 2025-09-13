@@ -35,7 +35,7 @@ const CreateProfile = ({ navigation }) => {
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <View style={styles.headerContainer}>
                     <Image
-                        source={{ uri: 'https://img.freepik.com/vector-gratis/circulo-azul-usuario-blanco_78370-4707.jpg?semt=ais_hybrid&w=740&q=80' }}
+                        source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IX4l0gifWfsMKntrIPOfz4Kag8aNbaPxPw&s' }}
                         style={styles.profileImage}
                     />
                     <Text style={styles.title}>Crear Estudiante</Text>

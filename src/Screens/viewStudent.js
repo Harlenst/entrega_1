@@ -28,7 +28,7 @@ const ViewStudent = ({ route, navigation }) => {
                 <View style={styles.profileHeader}>
                     <Avatar.Image
                         size={100}
-                        source={{ uri: 'https://cdn-icons-png.flaticon.com/512/3135/3135715.png' }}
+                        source={{ uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-IX4l0gifWfsMKntrIPOfz4Kag8aNbaPxPw&s' }}
                         style={styles.avatar}
                     />
                     <Text style={styles.profileName}>{`${profile.name} ${profile.lastName}`}</Text>
